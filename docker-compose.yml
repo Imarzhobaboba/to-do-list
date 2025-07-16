@@ -2,7 +2,7 @@ services:
   postgres:
     image: postgres:16.3-alpine3.19
     environment:
-      DB_PORT: 5432
+      DB_PORT: "5432"
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: postgres
@@ -30,7 +30,7 @@ services:
       DB_USER: postgres
       DB_PASSWORD: postgres
       DB_NAME: postgres
-      DB_PORT: 5432
+      DB_PORT: "5432"
       REDIS_ADDR: redis:6379
 
   frontend:

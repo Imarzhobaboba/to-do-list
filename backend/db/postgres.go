@@ -9,9 +9,9 @@ import (
 	"gorm.io/gorm/logger"
 )
 
-func InitPostgres(host, user, password, dbname string, port int) (*gorm.DB, error) {
+func InitPostgres(host, user, password, dbname string, port string) (*gorm.DB, error) {
 	dsn := fmt.Sprintf(
-		"host=%s user=%s password=%s dbname=%s port=%d sslmode=disable TimeZone=UTC",
+		"host=%s user=%s password=%s dbname=%s port=%s sslmode=disable TimeZone=UTC",
 		host, user, password, dbname, port,
 	)
 

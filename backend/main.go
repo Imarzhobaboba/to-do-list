@@ -15,10 +15,10 @@ func main() {
 	// Инициализация БД
 	pgDB, err := db.InitPostgres(
 		"postgres", // хост из docker-compose
-		"user",
-		"password",
-		"todo_db",
-		5432,
+		"postgres",
+		"postgres",
+		"postgres",
+		"5432",
 	)
 	if err != nil {
 		log.Fatalf("Failed to connect to database: %v", err)
