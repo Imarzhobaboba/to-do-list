@@ -2,9 +2,10 @@ services:
   postgres:
     image: postgres:16.3-alpine3.19
     environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: todo_db
+      DB_PORT: 5432
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
@@ -26,9 +27,9 @@ services:
       - redis
     environment:
       DB_HOST: postgres
-      DB_USER: user
-      DB_PASSWORD: password
-      DB_NAME: todo_db
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      DB_NAME: postgres
       DB_PORT: 5432
       REDIS_ADDR: redis:6379
 
