@@ -2,10 +2,11 @@ package main
 
 import (
 	"log"
-	"todo-backend/db"
-	"todo-backend/handlers"
-	"todo-backend/models"
-	"todo-backend/repositories"
+
+	"backend/db"
+	"backend/handlers"
+	"backend/models"
+	"backend/repositories"
 
 	"github.com/gin-gonic/gin"
 )

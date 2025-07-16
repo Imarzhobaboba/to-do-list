@@ -1,7 +1,7 @@
 package repositories
 
 import (
-	"todo-backend/models"
+	"backend/models"
 
 	"gorm.io/gorm"
 )

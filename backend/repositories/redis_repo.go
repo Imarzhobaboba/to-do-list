@@ -3,8 +3,11 @@ package repositories
 import (
 	"encoding/json"
 	"time"
-	"todo-backend/db"
-	"todo-backend/models"
+
+	"backend/db"
+	"backend/models"
+
+	"github.com/redis/go-redis/v9"
 )
 
 type RedisRepository struct {
